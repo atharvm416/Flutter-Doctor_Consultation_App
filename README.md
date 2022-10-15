@@ -16,7 +16,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-*****Description******
+***Detail :***
 A Doctor Consultation App for people with mental illnesses under the Smart India 
 Hackathon (SIH) initiative provides features like helplines, doctor 
 appointments (video and audio), a chatbot with the patient using Google 
