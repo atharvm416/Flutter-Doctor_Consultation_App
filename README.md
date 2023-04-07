@@ -39,7 +39,7 @@ linked with Dialogflow.
           "/friend": (context) => const FriendPage(),
           "/chat": (context) => const ChatPage(),
         });
-     ```
+```
 # 1. Login Page -
 * The first page to appear on the screen is the Login page which contains username and password, login button, and a route to add new users page. 
 ![Screenshot_20230407_124942](https://user-images.githubusercontent.com/112277897/230567484-2ae0ec90-cd37-4ccd-9881-207fb0ef80cb.jpg)
