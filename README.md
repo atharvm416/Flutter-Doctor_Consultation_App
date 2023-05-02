@@ -63,7 +63,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ### 3. Drawer -
 * A Drawer is an interface that is available on every single page. The basic idea is to get access to account-related services on every page of the registered user.
-* The Drawer is a prebuilt function that helps us achieve what we want in the app bar and also cuts out connections with the main body to highlight itself. Our Drawer contains a *profile, account name,and email*. It will help the user navigate. The *ListTile* function is used to give them a vertical look.
+* The Drawer is a prebuilt function that helps us achieve what we want in the app bar and also cuts out connections with the main body to highlight itself. Our Drawer contains a *profile, account name,and email*. It will help the user navigate. The **ListTile** function is used to give them a vertical look.
 * The Drawer also has a *Drawer header*, which is used to highlight the user's details. We have used it as follows:
  ```
       DrawerHeader(
@@ -105,7 +105,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # 4. Request Page -
-* This page contains an *AppBar* with a drawer, *body*, and a *floating action button* with two calling options: one for the KIRAN helpline and another for the child protection helpline. The body of the page has 4 options, among which the first button is for the self-appointment, the second button is for other people than the registered person, the third button is for chatting with a bot for any small help required in the app, and the last button is to launch the website regarding information about the organisation.
+* This page contains an *AppBar* with a drawer, *body*, and a *floating action button* with two calling options: one for the *KIRAN helpline* and another for the *child protection helpline*. The body of the page has 4 options, among which the first button is for the self-appointment, the second button is for other people than the registered person, the third button is for chatting with a bot for any small help required in the app, and the last button is to launch the website regarding information about the organisation.
 ![Screenshot_20230407_125051](https://user-images.githubusercontent.com/112277897/230569743-a5ecb97a-777e-4bcf-93fc-84918e469e8c.jpg)
 ![Screenshot_20230407_125104](https://user-images.githubusercontent.com/112277897/230569778-3a72070d-aa78-4dc1-bc03-9f22bcc7bdd8.jpg)
 
@@ -114,12 +114,12 @@ samples, guidance on mobile development, and a full API reference.
 ![Screenshot_20230407_155524](https://user-images.githubusercontent.com/112277897/230593141-5c60b356-c243-4c8e-9c3a-d12599042c6a.jpg)
 
 # 6. Information page (Home page) -
-* The page contains a current mood metre (a horizontal bar with 7 stops having emojis or images of the most common moods) and a text area to add *reasons* and *medical history*. This option is not required, the user can proceed without giving any answers.
+* The page contains a *current mood metre* (a horizontal bar with 7 stops having emojis or images of the most common moods) and a text area to add *reasons* and *medical history*. This option is not required, the user can proceed without giving any answers.
 * We have kept this page so that the doctor can get an idea of the user or patient before the meeting. It will help the doctor prepare and assist them.
 ![Screenshot_20230407_125110](https://user-images.githubusercontent.com/112277897/230594334-f6b240c3-18ac-4a04-b762-65289b771653.jpg)
 
 # 7. Date and Time page (Submit page) -
-* The body section of the page contains three buttons: one for the date, one for the time, and one for the submit button. We achieve this with the help of the following code:
+* The body section of the page contains three buttons: one for *the date, one for the time, and one for the submit button*. We achieve this with the help of the following code:
  ```
       Future<DateTime?> pickDate() => showDatePicker(
       context: context,
@@ -131,17 +131,19 @@ samples, guidance on mobile development, and a full API reference.
       context: context,
       initialTime: TimeOfDay(hour: dateTime.hour, minute: dateTime.minute));
 ```
-* Both showDatePicker and showTimePicker are prebuilt functions that are called by pickDate() and pickTime(), respectively, and return values in a variable. We do not require any extra packages for it. It is available in the *'package:flutter/material.dart'*, which is the standard package.
-* The submit button (labelled find Doctor) is routed to a basic page with the help of "MyRoutes.finalRoute".
+* Both **showDatePicker** and **showTimePicker** are prebuilt functions that are called by pickDate() and pickTime(), respectively, and return values in a variable. We do not require any extra packages for it. It is available in the *'package:flutter/material.dart'*, which is the standard package.
+* The submit button (labelled find Doctor) is routed to a basic page with the help of *"MyRoutes.finalRoute"*.
 ![Screenshot_20230407_125121](https://user-images.githubusercontent.com/112277897/230595895-06633389-3b81-453a-9405-9dd03b367e4d.jpg)
 ![Screenshot_20230407_125134](https://user-images.githubusercontent.com/112277897/230595891-47d48eae-b232-4fca-ba57-e9ade4722dfb.jpg)
 ![Screenshot_20230407_125124](https://user-images.githubusercontent.com/112277897/230595900-6dc58042-8283-4506-a57d-171f84f9df46.jpg)
 
 # 8. Chat page -
-* The page is a chat window where the user can enter basic questions, and the response is also given back through an API. **Dialogflow** is connected to the Google Cloud via the JSON API. It responds to English, Hindi, and Marathi languages, mainly English. Following are some questions you may ask our bot: **I cannot use app properly
-Feeling depressed 
-My doctor did not call?
-Reports have not been provided
-क्या आप कृपया मुझे डॉक्टर ढूंढ सकते हैं
-तुम्ही कृपया मला डॉक्टर शोधू शकता का?** 
+* The page is a chat window where the user can enter basic questions, and the response is also given back through an API. *Dialogflow* is connected to the Google Cloud via the **JSON API**. It responds to *English, Hindi, and Marathi* languages, mainly English. Following are some questions you may ask our bot: 
+**1. I cannot use app properly
+2. Feeling depressed
+3.My doctor did not call?
+4.Reports have not been provided
+5.क्या आप कृपया मुझे डॉक्टर ढूंढ सकते हैं
+6.तुम्ही कृपया मला डॉक्टर शोधू शकता का?**
+
 Check it out in the demo_video folder.
