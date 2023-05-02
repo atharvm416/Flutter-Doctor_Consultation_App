@@ -139,11 +139,11 @@ samples, guidance on mobile development, and a full API reference.
 
 # 8. Chat page -
 * The page is a chat window where the user can enter basic questions, and the response is also given back through an API. *Dialogflow* is connected to the Google Cloud via the **JSON API**. It responds to *English, Hindi, and Marathi* languages, mainly English. Following are some questions you may ask our bot: 
-**1. I cannot use app properly
+1. I cannot use app properly
 2. Feeling depressed
 3.My doctor did not call?
 4.Reports have not been provided
 5.क्या आप कृपया मुझे डॉक्टर ढूंढ सकते हैं
-6.तुम्ही कृपया मला डॉक्टर शोधू शकता का?**
+6.तुम्ही कृपया मला डॉक्टर शोधू शकता का?
 
 Check it out in the demo_video folder.
